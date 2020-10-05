@@ -241,6 +241,8 @@ function kiemtrathongtinthebaohiem(dataAuth, tendangnhap, matkhau, ten, mathe, n
 	if(document.URL.indexOf('tiepnhan') != -1){
 	/* document.getElementById("tungay").disabled = false;
 	document.getElementById("denngay").disabled = false; */
+		var a = $("#tungay")[0];
+		a.removeAttribute("disabled");
 	}
     $.ajax({
         url : url,
@@ -367,8 +369,8 @@ function SetValueThongTinBHYT(soTheBHYT,hoten,namsinh,bool_namsinh,gt_tungay,gt_
 	$('#hoten').val(hoten);
 	$('#namsinh').val(namsinh);
 	$('#chinamsinh').prop('checked',bool_namsinh);
-	$("#tungay").val(gt_tungay);
-	$('#denngay').val(gt_denngay);
+	//$("#tungay").val(gt_tungay);
+	//$('#denngay').val(gt_denngay);
 	$('#noidangky').val(noidangky);
 	loadcbnoidangky(noidangky);
 	//$('#cbnoidangky').val(loadcbnoidangky(noidangky));
