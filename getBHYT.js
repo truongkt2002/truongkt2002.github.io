@@ -1,5 +1,5 @@
-var tendangnhap = '31020_BV';
-var matkhau = '6C1DF2D663341B2DACB528E027237565';
+var taikhoan="";
+var matkhau="";
 var tinhtrangravien = Array();
 tinhtrangravien[1] = 'Ra viện';
 tinhtrangravien[2] = 'Chuyển viện';
