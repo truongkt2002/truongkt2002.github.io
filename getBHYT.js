@@ -69,8 +69,8 @@ function LayThongBHYT_LichSuKham() {
 										var mathe = $('#sobhyt').val();
 										var ngaysinh = $('#namsinh').val();
 										var isChiNamsinh = $('#chinamsinh').is(":checked");
-										var ngayBD = $('#tungay').val();
-										var ngayKT = $('#denngay').val();
+										//var ngayBD = $('#tungay').val();
+										//var ngayKT = $('#denngay').val();
 										var noidangky = $('#noidangky').val();
 										var gioitinh = $('#gioitinh').val() == 1 ? 1 : 2;
 										if (isChiNamsinh) {
@@ -83,8 +83,8 @@ function LayThongBHYT_LichSuKham() {
 										var mathe = $('#sobhyt').val();
 										var ngaysinh = $('#namsinh').val();
 										var isChiNamsinh = $('#chinamsinh').is(":checked");
-										var ngayBD = $('#gttungay').val();
-										var ngayKT = $('#gtdenngay').val();
+										//var ngayBD = $('#gttungay').val();
+										//var ngayKT = $('#gtdenngay').val();
 										var noidangky = $('#noidk').val();
 										var gioitinh = $('#gioitinh').val() == 'true' ? 1 : 2;
 										var mayte = $('#mayte').val() ? $('#mayte').val() : $('#mabn').val();
@@ -239,9 +239,9 @@ function LayThongBHYT_LichSuKham() {
 function kiemtrathongtinthebaohiem(dataAuth, tendangnhap, matkhau, ten, mathe, ngaysinh, ngayBD, ngayKT, noidangky, gioitinh) {
     var url = "https://egw.baohiemxahoi.gov.vn/api/egw/NhanLichSuKCB2018?token=" + dataAuth.APIKey.access_token + '&id_token=' + dataAuth.APIKey.id_token + '&username=' + tendangnhap + '&password=' + matkhau;
 	if(document.URL.indexOf('tiepnhan') != -1){
-	/* document.getElementById("tungay").disabled = false;
-	document.getElementById("denngay").disabled = false; */
-		var a = $("#tungay")[0];
+	//document.getElementById("tungay").disabled = false;
+	//document.getElementById("denngay").disabled = false;
+	var a = $("#tungay")[0];
 		a.removeAttribute("disabled");
 	}
     $.ajax({
@@ -468,8 +468,10 @@ function Check_Get_BHYT(ReSult_BHYT)
 							}
 	else{
 		if(ReSult_BHYT.maKetQua==='001'||ReSult_BHYT.maKetQua==='002'){
-			document.getElementById("tungay").disabled = false;
-			document.getElementById("denngay").disabled = false;
+			//document.getElementById("tungay").disabled = false;
+			//document.getElementById("denngay").disabled = false;
+			var a = $("#tungay")[0];
+		a.removeAttribute("disabled");
 		}
 	}
 };
