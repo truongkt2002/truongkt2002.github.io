@@ -69,8 +69,8 @@ function LayThongBHYT_LichSuKham() {
 										var mathe = $('#sobhyt').val();
 										var ngaysinh = $('#namsinh').val();
 										var isChiNamsinh = $('#chinamsinh').is(":checked");
-										//var ngayBD = $('#tungay').val();
-										//var ngayKT = $('#denngay').val();
+										var ngayBD = $('#tungay').val();
+										var ngayKT = $('#denngay').val();
 										var noidangky = $('#noidangky').val();
 										var gioitinh = $('#gioitinh').val() == 1 ? 1 : 2;
 										if (isChiNamsinh) {
@@ -83,8 +83,8 @@ function LayThongBHYT_LichSuKham() {
 										var mathe = $('#sobhyt').val();
 										var ngaysinh = $('#namsinh').val();
 										var isChiNamsinh = $('#chinamsinh').is(":checked");
-										//var ngayBD = $('#gttungay').val();
-										//var ngayKT = $('#gtdenngay').val();
+										var ngayBD = $('#gttungay').val();
+										var ngayKT = $('#gtdenngay').val();
 										var noidangky = $('#noidk').val();
 										var gioitinh = $('#gioitinh').val() == 'true' ? 1 : 2;
 										var mayte = $('#mayte').val() ? $('#mayte').val() : $('#mabn').val();
@@ -369,8 +369,8 @@ function SetValueThongTinBHYT(soTheBHYT,hoten,namsinh,bool_namsinh,gt_tungay,gt_
 	$('#hoten').val(hoten);
 	$('#namsinh').val(namsinh);
 	$('#chinamsinh').prop('checked',bool_namsinh);
-	//$("#tungay").val(gt_tungay);
-	//$('#denngay').val(gt_denngay);
+	$("#tungay").val(gt_tungay);
+	$('#denngay').val(gt_denngay);
 	$('#noidangky').val(noidangky);
 	loadcbnoidangky(noidangky);
 	//$('#cbnoidangky').val(loadcbnoidangky(noidangky));
