@@ -239,8 +239,8 @@ function LayThongBHYT_LichSuKham() {
 function kiemtrathongtinthebaohiem(dataAuth, tendangnhap, matkhau, ten, mathe, ngaysinh, ngayBD, ngayKT, noidangky, gioitinh) {
     var url = "https://egw.baohiemxahoi.gov.vn/api/egw/NhanLichSuKCB2018?token=" + dataAuth.APIKey.access_token + '&id_token=' + dataAuth.APIKey.id_token + '&username=' + tendangnhap + '&password=' + matkhau;
 	if(document.URL.indexOf('tiepnhan') != -1){
-	document.getElementById("tungay").disabled = true;
-	document.getElementById("denngay").disabled = true;
+	document.getElementById("tungay").disabled = false;
+	document.getElementById("denngay").disabled = false;
 	}
     $.ajax({
         url : url,
