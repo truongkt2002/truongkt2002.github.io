@@ -434,7 +434,7 @@ function Check_Get_BHYT(ReSult_BHYT)
                                     Value_Gioitinh = 0;
 								}
 								var DauThe = ReSult_BHYT.maThe.substring(0,3);
-								var url1 = "https://yte-hungyen.vnpthis.vn/web_his/kiemtrathebhyt?madt="+DauThe;
+								var url1 = "https://yte-haiphong.vnpthis.vn/web_his/kiemtrathebhyt?madt="+DauThe;
 								var xhttp = new XMLHttpRequest();
 								xhttp.onreadystatechange = function() {
 									if (this.readyState == 4 && this.status == 200) {
@@ -517,7 +517,7 @@ function getDateDiff(time1, time2) {
 }
 function loadcbnoidangky(dvtt) {
     var xhttp = new XMLHttpRequest();
-	var url  = "https://yte-hungyen.vnpthis.vn/web_his/laynoidangkykcb?noidangky="+dvtt;
+	var url  = "https://yte-haiphong.vnpthis.vn/web_his/laynoidangkykcb?noidangky="+dvtt;
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
 			$("#noidangky_hienthi").val(this.responseText);
