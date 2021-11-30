@@ -18,9 +18,11 @@ function LayThongBHYT_LichSuKham() {
 	$.get(window.location.origin+"/web_his/Cau_Hinh_Tham_So_XuatXMLBHYT",
 			function(t)
 			{
-				tendangnhap=$(t).find("#motathamso123").val();
-				matkhau=$(t).find("#motathamso124").val();
-				matkhau = MD5(matkhau);
+				//tendangnhap=$(t).find("#motathamso123").val();
+				//matkhau=$(t).find("#motathamso124").val();
+				//matkhau = MD5(matkhau);
+				tendangnhap = '31020_BV';
+				matkhau = '6C1DF2D663341B2DACB528E027237565';	
 				if(tendangnhap != '')
 					DVTT = tendangnhap.substring(0,5);
 				if (tendangnhap || matkhau) {
