@@ -470,8 +470,8 @@ function Check_Get_BHYT(ReSult_BHYT)
 		if(ReSult_BHYT.maKetQua==='001'||ReSult_BHYT.maKetQua==='002'){
 			//document.getElementById("tungay").disabled = false;
 			//document.getElementById("denngay").disabled = false;
-			var a = $("#tungay")[0];
-		a.removeAttribute("disabled");
+			//var a = $("#tungay")[0];
+		//a.removeAttribute("disabled");
 		}
 	}
 };
