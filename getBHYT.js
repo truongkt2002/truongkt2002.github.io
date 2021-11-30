@@ -241,8 +241,8 @@ function kiemtrathongtinthebaohiem(dataAuth, tendangnhap, matkhau, ten, mathe, n
 	if(document.URL.indexOf('tiepnhan') != -1){
 	//document.getElementById("tungay").disabled = false;
 	//document.getElementById("denngay").disabled = false;
-	var a = $("#tungay")[0];
-		a.removeAttribute("disabled");
+	//var a = $("#tungay")[0];
+		//a.removeAttribute("disabled");
 	}
     $.ajax({
         url : url,
