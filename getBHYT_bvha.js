@@ -12,7 +12,7 @@ ketquadieutri[3] = 'Không thay đổi';
 ketquadieutri[4] = 'Nặng hơn';
 ketquadieutri[5] = 'Tử vong';
 var DVTT = null;
-var BV_Tuyen2_HYN = ['33016','33017','33018','33031','33913'];
+var BV_Tuyen3_HPG = ['31020','31021','31025'];
 function LayThongBHYT_LichSuKham() {
     var tendangnhap = '';
 	$.get(window.location.origin+"/web_his/Cau_Hinh_Tham_So_XuatXMLBHYT",
@@ -353,7 +353,7 @@ function kiemtrathongtinthebaohiem(dataAuth, tendangnhap, matkhau, ten, mathe, n
                             }
                             swal( text);
                 } else {
-					swal( '<span style="color:green">' + result.ghiChu + result.soTheBHYT '</span>');
+					swal( '<span style="color:red">' + result.maTheCu+ '-' + result.ghiChu + '</span>');
                 }
             } else {
                 swal( '<span style="color:red">' + result.ghiChu + '</span>');
@@ -378,7 +378,7 @@ function SetValueThongTinBHYT(soTheBHYT,hoten,namsinh,bool_namsinh,gt_tungay,gt_
 	//$('#cbnoidangky').val(loadcbnoidangky(noidangky));
 	$('#cbgioitinh').val(bool_gioitinh);
 	$('#gioitinh').val(gioitinh);
-	if(DVTT.indexOf(BV_Tuyen2_HYN)!= -1)
+	if(DVTT.indexOf(BV_Tuyen3_HPG)!= -1)
 		$('#dungtuyen').prop('checked', bool_dungtuyen);
 	$('#diachi').val(diachi);
 	$('#tlmiengiam').val(MucHuong);
