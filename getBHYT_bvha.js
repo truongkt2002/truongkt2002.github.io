@@ -1,4 +1,3 @@
-
 var tendangnhap = '31020_BV';
 var matkhau = '6C1DF2D663341B2DACB528E027237565';
 var tinhtrangravien = Array();
@@ -354,7 +353,44 @@ function kiemtrathongtinthebaohiem(dataAuth, tendangnhap, matkhau, ten, mathe, n
                             }
                             swal( text);
                 } else {
-					swal( '<span style="color:green">' + result.ghiChu +'<br/> Mã thẻ :'+ result.maThe +'<br/> Mã thẻ :'+ result.cqBHXH +'</span>');
+					text += '<br/><table border="1" style="font-size: 10px"><tbody style="display: inline-block;overflow-y: scroll;max-height:200px;">';
+                                var headerTAble = [
+                                    'STT',  
+                                    'Mã thẻ BHYT',
+                                    'Họ và tên',   
+                                    'Ngày vào viện',
+                                    'Ngày ra viện',
+                                    'Chẩn đoán',
+                                    'Cơ sở KCB',
+                                    'Kết quả điều trị',
+                                    'Tình trạng ra viện',
+                                ];
+                                text += '<tr>';
+                                    for (var a = 0; a <= headerTAble.length - 1; a++) {
+                                        text += '<td>' + headerTAble[a] + '</td>';
+                                    }
+                                text += '</tr>';
+                                for (var i = 0; i <= result.dsLichSuKCB2018.length - 1; i ++) {
+									
+									stringNgayvao = result.dsLichSuKCB2018[i].ngayVao;
+									stringNgayra = result.dsLichSuKCB2018[i].ngayRa;
+							
+									stringNgayra = stringNgayra.substring(6,8) + '-' + stringNgayra.substring(4,6) + '-' + stringNgayra.substring(0,4);
+									stringNgayvao = stringNgayvao.substring(6,8) + '-' + stringNgayvao.substring(4,6) + '-' + stringNgayvao.substring(0,4);
+                                    text += '<tr>';
+                                        text += '<td>' + (i + 1) + '</td>';
+                                        text += '<td>' + mathe + '</td>';
+                                        text += '<td>' + ten + '</td>';
+                                        text += '<td>' + stringNgayvao + '</td>';
+                                        text += '<td>' + stringNgayra + '</td>';
+                                        text += '<td>' + result.dsLichSuKCB2018[i].tenBenh + '</td>';
+                                        text += '<td>' + result.dsLichSuKCB2018[i].maCSKCB + '</td>';
+                                        text += '<td>' + ketquadieutri[result.dsLichSuKCB2018[i].kqDieuTri] + '</td>';
+                                        text += '<td>' + tinhtrangravien[result.dsLichSuKCB2018[i].tinhTrang] + '</td>';
+                                    text += '</tr>';
+                                }
+                                text + '</tbody></table>';
+					swal( '<span style="color:green">' + result.ghiChu +'<br/> Mã thẻ :'+ result.maThe +text +'</span>');
                 }
             } else {
                 swal( '<span style="color:red">' + result.ghiChu + '</span>');
