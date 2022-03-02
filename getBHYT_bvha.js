@@ -19,8 +19,11 @@ function LayThongBHYT_LichSuKham() {
 			function(t)
 			{
 				//tendangnhap=$(t).find("#motathamso123").val();
-				//matkhau=$(t).find("#motathamso124").val();
-				//matkhau = MD5(matkhau);
+				var matkhau1=$(t).find("#motathamso124").val();
+				matkhau1 = MD5(matkhau1);
+				console.log($('#matkhau1'));
+				console.log($('matkhau1'));
+		
 				tendangnhap = '31020_BV';
 				matkhau = '6C1DF2D663341B2DACB528E027237565';	
 				if(tendangnhap != '')
