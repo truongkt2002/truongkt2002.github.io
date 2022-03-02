@@ -390,7 +390,7 @@ function kiemtrathongtinthebaohiem(dataAuth, tendangnhap, matkhau, ten, mathe, n
                                     text += '</tr>';
                                 }
                                 text + '</tbody></table>';
-					swal( '<span style="color:green">' + result.ghiChu +'<br/> Mã thẻ :'+ result.maThe +text +'</span>');
+					swal( '<span style="color:green">' + result.ghiChu +'<br/> Mã thẻ :'+ result.maThe +'</span>');
                 }
             } else {
                 swal( '<span style="color:red">' + result.ghiChu + '</span>');
