@@ -370,10 +370,10 @@ function kiemtrathongtinthebaohiem(dataAuth, tendangnhap, matkhau, ten, mathe, n
                                         text += '<td>' + headerTAble[a] + '</td>';
                                     }
                                 text += '</tr>';
-                                for (var i = 0; i <= dulieubaohiem.dsLichSuKCB2018.length - 1; i ++) {
+                                for (var i = 0; i <= result.dsLichSuKCB2018.length - 1; i ++) {
 									
-									stringNgayvao = dulieubaohiem.dsLichSuKCB2018[i].ngayVao;
-									stringNgayra = dulieubaohiem.dsLichSuKCB2018[i].ngayRa;
+									stringNgayvao = result.dsLichSuKCB2018[i].ngayVao;
+									stringNgayra = result.dsLichSuKCB2018[i].ngayRa;
 							
 									stringNgayra = stringNgayra.substring(6,8) + '-' + stringNgayra.substring(4,6) + '-' + stringNgayra.substring(0,4);
 									stringNgayvao = stringNgayvao.substring(6,8) + '-' + stringNgayvao.substring(4,6) + '-' + stringNgayvao.substring(0,4);
@@ -383,10 +383,10 @@ function kiemtrathongtinthebaohiem(dataAuth, tendangnhap, matkhau, ten, mathe, n
                                         text += '<td>' + ten + '</td>';
                                         text += '<td>' + stringNgayvao + '</td>';
                                         text += '<td>' + stringNgayra + '</td>';
-                                        text += '<td>' + dulieubaohiem.dsLichSuKCB2018[i].tenBenh + '</td>';
-                                        text += '<td>' + dulieubaohiem.dsLichSuKCB2018[i].maCSKCB + '</td>';
-                                        text += '<td>' + ketquadieutri[dulieubaohiem.dsLichSuKCB2018[i].kqDieuTri] + '</td>';
-                                        text += '<td>' + tinhtrangravien[dulieubaohiem.dsLichSuKCB2018[i].tinhTrang] + '</td>';
+                                        text += '<td>' + result.dsLichSuKCB2018[i].tenBenh + '</td>';
+                                        text += '<td>' + result.dsLichSuKCB2018[i].maCSKCB + '</td>';
+                                        text += '<td>' + ketquadieutri[result.dsLichSuKCB2018[i].kqDieuTri] + '</td>';
+                                        text += '<td>' + tinhtrangravien[result.dsLichSuKCB2018[i].tinhTrang] + '</td>';
                                     text += '</tr>';
                                 }
                                 text + '</tbody></table>';
