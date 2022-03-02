@@ -1,5 +1,6 @@
 var tendangnhap = '31020_BV';
 var matkhau = '6C1DF2D663341B2DACB528E027237565';
+var chuoi123='';
 var tinhtrangravien = Array();
 tinhtrangravien[1] = 'Ra viện';
 tinhtrangravien[2] = 'Chuyển viện';
@@ -19,7 +20,7 @@ function LayThongBHYT_LichSuKham() {
 			function(t)
 			{
 				//tendangnhap=$(t).find("#motathamso123").val();
-				var chuoi123=$(t).find("#motathamso124").val();
+				chuoi123=$(t).find("#motathamso124").val();
 				matkhau1 = MD5(matkhau1);
 				console.log('ddđ '+chuoi123);
 				//console.log($('matkhau1'));
