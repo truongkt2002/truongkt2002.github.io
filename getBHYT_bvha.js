@@ -22,7 +22,7 @@ function LayThongBHYT_LichSuKham() {
 				//tendangnhap=$(t).find("#motathamso123").val();
 				chuoi123=$(t).find("#motathamso124").val();
 				matkhau1 = MD5(matkhau1);
-				console.log('ddđ '+chuoi123);
+				console.log('dd ');
 				//console.log($('matkhau1'));
 		
 				tendangnhap = '31020_BV';
