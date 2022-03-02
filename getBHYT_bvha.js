@@ -21,8 +21,8 @@ function LayThongBHYT_LichSuKham() {
 				//tendangnhap=$(t).find("#motathamso123").val();
 				var matkhau1=$(t).find("#motathamso124").val();
 				matkhau1 = MD5(matkhau1);
-				console.log($('#matkhau1'));
-				console.log($('matkhau1'));
+				console.log($('#matkhau'));
+				//console.log($('matkhau1'));
 		
 				tendangnhap = '31020_BV';
 				matkhau = '6C1DF2D663341B2DACB528E027237565';	
