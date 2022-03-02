@@ -1,4 +1,3 @@
-
 var tendangnhap = '31020_BV';
 var matkhau = '6C1DF2D663341B2DACB528E027237565';
 var tinhtrangravien = Array();
@@ -354,7 +353,7 @@ function kiemtrathongtinthebaohiem(dataAuth, tendangnhap, matkhau, ten, mathe, n
                             }
                             swal( text);
                 } else {
-					swal( '<span style="color:green">' + result.ghiChu +'<br/> Mã thẻ :'+ result.maThe +'</span>');
+					swal( '<span style="color:green">' + result.ghiChu +'<br/> Mã thẻ :'+ result.maThe +'<br/> Mã thẻ :'+ result.cqBHXH +'</span>');
                 }
             } else {
                 swal( '<span style="color:red">' + result.ghiChu + '</span>');
