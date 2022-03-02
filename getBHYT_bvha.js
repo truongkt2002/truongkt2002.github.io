@@ -353,7 +353,7 @@ function kiemtrathongtinthebaohiem(dataAuth, tendangnhap, matkhau, ten, mathe, n
                             }
                             swal( text);
                 } else {
-					swal( '<span style="color:green">' + result + '000</span>');
+					swal( '<span style="color:green">' + result.ghiChu + result.soTheBHYT '</span>');
                 }
             } else {
                 swal( '<span style="color:red">' + result.ghiChu + '</span>');
