@@ -353,7 +353,7 @@ function kiemtrathongtinthebaohiem(dataAuth, tendangnhap, matkhau, ten, mathe, n
                             }
                             swal( text);
                 } else {
-					swal( '<span style="color:green">' + result.ghiChu +'<br/> Mã thẻ :'+ result.maThe +'<br/> Nơi đăng ký ban đầu :'+ result.maDKBD'</span>');
+					swal( '<span style="color:green">' + result.ghiChu +'<br/> Mã thẻ :'+ result.maThe +'<br/> Nơi đăng ký ban đầu :'+ result.maDKBD+'</span>');
                 }
             } else {
                 swal( '<span style="color:red">' + result.ghiChu + '</span>');
